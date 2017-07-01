@@ -1,13 +1,15 @@
-var Alexa = require('alexa-sdk');
+'use strict';
+var Alexa = require("alexa-sdk");
 
-exports.handler = function(event, context, callback){
-    var alexa = Alexa.handler(event, context, callback);
-      alexa.registerHandlers(handlers);
-	  alexa.execute();
-}
+exports.handler = function(event, context, callback) {
+    var alexa = Alexa.handler(event, context);
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
 
 var handlers = {
-	'TestIntent': function () {
-		this.emit(':tell', 'Hi Claire. You look nice. Whatcha gonna make for lunch?');
-	}
-}
+
+    'LaunchRequest': function () {
+        this.emit(':tell', 'Hello World!');
+    },
+};
