@@ -1,0 +1,19 @@
+{
+  "name": "FirstSKill",
+  "version": "1.0.0",
+  "description": "First version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "fact"
+  ],
+  "author": "Scott Mehus",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}
