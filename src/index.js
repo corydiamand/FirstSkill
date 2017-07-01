@@ -10,6 +10,12 @@ exports.handler = function(event, context, callback) {
 var handlers = {
 
     'LaunchRequest': function () {
-        this.emit(':tell', 'Hello World!');
+        this.emit(':tell', 'Sup Scott');
     },
+
+
+    'ComplimentClaire': function () {
+        this.emit(':tell', 'Claire, you look beautiful today');
+    },
+
 };
