@@ -10,12 +10,20 @@ exports.handler = function(event, context, callback) {
 var handlers = {
 
     'LaunchRequest': function () {
-        this.emit(':tell', 'Sup Scott');
+        this.emit(':ask', 'Sup Claire! You are my favorite person ever.');
     },
 
 
     'ComplimentClaire': function () {
-        this.emit(':tell', 'Claire, you look beautiful today');
+        this.emit(':tell', 'Claire, you are awesome. Scott loves you');
+    },
+    
+
+    'InsultMatt': function () {
+        this.emit(':tell', 'Matt Mehus, you suck');
     },
 
+    'InsultScott': function () {
+        this.emit(':tell', 'Scott Mehus, you are a square');
+    },
 };
